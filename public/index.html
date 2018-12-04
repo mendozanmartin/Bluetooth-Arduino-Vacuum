@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" href="tachyons.min.css">
+    <link rel = "stylesheet" href = "style.css">
+    <link rel="stylesheet" href="epoch.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+
+
+    <title>Arduino Bluetooth Application</title>
+  </head>
+  <body class = "Robotofont bg-near-white shadow-5">
+
+<header class = "bg-navy flex justify-between">
+<div>
+</div>
+  <div>
+  <h1 class = "white ma0 pa3 dib"> Bluetooth Arduino Vacuum </h2>
+  </div>
+  <div>
+    <img src = "bluetooth-icon.png" class = "w2 h2 mv3 mh1" id = "connect">
+    <img src = "bluetooth-disconnect.png" class = "w2 h2 mv3 mh2" id = "disconnect">
+
+</div>
+</header>
+
+<script>
+$( function() {
+   $( "#draggable1" ).draggable();
+ } );
+ $( function() {
+    $( "#draggable2" ).draggable();
+  } );
+ </script>
+
+<!-- Motion Controls -->
+<div class = "tc bg-white fl shadow-3 mv5 ml3" id = "draggable1">
+  <div class = "bg-blue pa2">
+<p class = "tl pa0 ma0 white">Supervisory Controls</p>
+  </div>
+  <select id = "mode" class = "white bg-blue ph3 pv2 mh2" onchange="modeChange()">
+  <option value = "Manual" class = "pa3" > Manual
+    <option value = "Automatic" class = "pa3"> Automatic
+  </select>
+<!--   <a class=" link grow ph3 pv2 mb2 dib white bg-black w4 mh2 mv3 pv3 br3" href="#0" id = "automatic">Automatic</a>
+ <a class=" link grow ph3 pv2 mb2 dib white bg-black w4 mh2 mv3 pv3 br3" href="#0" id = "manual">Manual</a>-->
+    <a class=" link grow ph3 pv2 mb2 dib white bg-red w4 mh2 mv3 pv3 br3" href="#0" id = "stop">Stop</a>
+    <a class=" link grow ph3 pv2 mb2 dib white bg-black w4 mh2 mv3 pv3 br3" href="#0" id = "fan">Turn On Fan</a>
+<div>
+    <img id = "upArrow"src="arrow-circle.png" alt="arrow controller" class = "upArrow w-20">
+</div>
+  <div>
+    <img id = "leftArrow"src="arrow-circle.png" alt="arrow controller" class = "leftArrow mh4 w-20">
+    <img id = "rightArrow"src="arrow-circle.png" alt="arrow controller" class = "rightArrow mh4 w-20">
+  </div>
+<div>
+    <img id = "downArrow"src="arrow-circle.png" alt="arrow controller" class = "downArrow tc w-20">
+</div>
+</div>
+
+<!-- Ultrasonic Sensor Chart -->
+<div class = "bg-white fl shadow-3 mv5 ml4" id = "draggable2">
+  <div class = "bg-blue pa2">
+<p class = "pa0 ma0 white">Data Acquisition</p>
+  </div>
+  <div class = "flex">
+  <div>
+  <p class = "ml5"><b><u> Ultrasonic Sensor Chart (centimeters vs. time)</u></b></p>
+<div class = "sideLbl w-10 mt7 fl">
+<u> Centimeters(cm)</u>
+</div>
+<div id="lineChart" class = "epoch category10 center fl realtimeChart" style="width: 500px; height: 400px"></div>
+<p class = "mv0 mh7 pa0"> <u>Time(s)</u></p>
+</div>
+<div class = "fr additionalMonitoring ma0">
+  <div class = "pv1 ph3 shadow-3 mb3">
+    <p class = "modeMonitor"> Mode: </p>
+    <p><b id = "modeMonitor">AUTOMATIC</b> </p>
+  </div>
+  <div class = "pv1 ph3 shadow-3 mb3">
+    <p class = "modeMonitor"> Vaccuum: </p>
+    <p> <b id = "fanMonitor">OFF  </b></p>
+  </div>
+  <div class = "pv1 ph3 shadow-3 mb3">
+    <p class = "modeMonitor"> # of Obstacles<br> Encountered: </p>
+    <p><b id = "obstaclesEncountered"> 0</b>  </p>
+  </div>
+</div>
+</div>
+</div>
+
+
+
+
+
+      <script src="BluetoothTerminal.js" charset="utf-8"></script>
+      <script src="d3.min.js" charset = "utf-8"></script>
+      <script src = "epoch.min.js" charset = "utf-8"> </script>
+      <script src="main.js" charset="utf-8"></script>
+
+<div>
+
+</div>
+
+
+  </body>
+</html>
