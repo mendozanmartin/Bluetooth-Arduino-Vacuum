@@ -18,3 +18,8 @@ An autonomous arduino vaccuum for my Supervisory Control and Data Acquisition co
 - Tachyons.css for quick and easy css
 - jQueryUI.js for draggable UI
 - Firebase Hosting
+
+<p>
+  <img src="ArduinoBluetoothImage"/>
+  </p>
+  
