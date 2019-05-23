@@ -20,6 +20,7 @@ An autonomous arduino vaccuum for my Supervisory Control and Data Acquisition co
 - Firebase Hosting
 
 <p>
-  <img src="ArduinoBluetoothImage">
-  </p>
+    <img src="ArduinoBluetoothImage.PNG" width="750" height="500" />
+</p>
+
   
