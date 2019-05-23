@@ -12,6 +12,10 @@ An autonomous arduino vaccuum for my Supervisory Control and Data Acquisition co
 - Twin Industries Breadboard
 - Tupperware 
 
+<p>
+    <img src="ArduinoBluetoothImage.PNG" width="700" height="400" />
+</p>
+
 ### Libraries and Tools
 - Epoch.js, D3.js for data visualization
 - BluetoothTerminal.js for bluetooth connectivity
@@ -19,8 +23,6 @@ An autonomous arduino vaccuum for my Supervisory Control and Data Acquisition co
 - jQueryUI.js for draggable UI
 - Firebase Hosting
 
-<p>
-    <img src="ArduinoBluetoothImage.PNG" width="750" height="500" />
-</p>
+
 
   
