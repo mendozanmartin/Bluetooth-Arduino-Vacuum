@@ -1,5 +1,5 @@
 # Bluetooth Arduino Vacuum
-An autonomous arduino vaccuum for my Supervisory Control and Data Acquisition course.
+An autonomous arduino vacuum for my Supervisory Control and Data Acquisition course.
 
 ### Materials:
 - DC Motor (4)
