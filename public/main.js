@@ -51,7 +51,7 @@ window.setInterval(function() {
    var obstaclesReceiver = data.substring(5);
    console.log(data);
    lineChartInstance.push(newLineChartData);
-    if (modeReceiver == "A;") {
+    if (modeReceiver == "A") {
       modeMonitor.innerHTML = "AUTOMATIC";
       modeMonitor.style.color = "green";
     } else {
